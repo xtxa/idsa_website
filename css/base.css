@@ -26,6 +26,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.description{
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
 #logo, .nav{
 	top: 5%;
 }
