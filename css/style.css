@@ -7,6 +7,7 @@
 	background-color: black;
 	position: fixed;
 	top: 0;
+	z-index: 500;
 }
 
 .links, #logo-circle{
@@ -143,3 +144,166 @@ hr{
 	z-index: 100;
 	font-size: .9em;
 }
+
+.footer a, .footer p{
+	color: #aaa;
+}
+
+.hidden{
+	display: none;
+}
+
+
+
+
+/*RESPONSIVE MEDIA*/
+
+/*small laptop screen*/
+@media screen and (max-width: 1500px){
+	.body{
+		width: 80vw;
+	}
+}
+
+/*iPad/large screen*/
+@media screen and (max-width: 1100px){
+	.container-1{
+		width: 100%;
+		position: sticky;
+	}
+
+	.container-3{
+		width: 100%;
+		overflow: scroll;
+	}
+
+	.hidden{
+		display: block;
+	}
+
+}
+
+/*mobile*/
+@media screen and (max-width: 850px){
+	.body{
+		width: 85vw;
+	}
+
+	.header{
+		height: 17%;
+	}
+
+	.links, #logo-circle{
+		top: 0;
+		margin: 2% auto;
+	}
+
+	.links a{
+		font-size: .7em;
+		padding: 0 .5%;
+	}
+
+	#logo-circle{
+		height: 40px;
+		width: 40px;
+	}
+
+	p{
+		font-size: .95em;
+	}
+
+	.description{
+		font-size: 2.5em;
+		left: 0;
+		max-width: none;
+		max-height: none;
+		margin: 0 5%;
+		bottom: 7%;
+	}
+
+	.container-2{
+		width: 100%;
+	}
+
+	.container-2 img{
+		margin: 10% 0 0 0 ;
+	}
+
+	.container-3{
+		height: 100%;
+		max-height: none;
+		overflow: auto;
+		
+	}
+
+	.body{
+		margin-bottom : 10%;
+	}
+
+	.footer{
+		padding: 3vh;
+	}
+
+	.content{
+		display: none;
+	}
+
+	#body{
+		background-image: url("img/grid.png");
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.nav{
+		font-size: .85em;
+		right: unset;
+		text-align: left;
+		margin-left: 5%;
+	}
+
+	#logo{
+		position: static;
+		margin: 6%;
+	}
+
+	#logo, .nav{
+		top: unset;
+	}
+
+	#header{
+		display: block;
+	}
+}
+
+/*mobile*/
+@media screen and (max-width: 600px){
+	.header{
+		height: 12%;
+	}
+
+	.links, #logo-circle{
+		display: block;
+		position: static;
+	}
+
+	.links{
+		text-align: center;
+	}
+
+	.links a{
+		font-size: .7em;
+		padding: 0 .5%;
+	}
+
+	.footer{
+		height: 12vh;
+	}
+}
+
+
+
+
+
+
+
+
