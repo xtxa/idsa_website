@@ -1,5 +1,5 @@
 .header{
-	font-family: sans-serif;
+	font-family: apercu, sans-serif;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	height: 9%;
@@ -62,7 +62,7 @@
 
 .container-3{
 	width: 66%;
-	max-height: 80vh;
+	/*max-height: 80vh;*/
 	overflow: scroll;
 }
 
@@ -77,6 +77,7 @@
 
 .container-2{
 	width: 49%;
+	margin-bottom: 3%;
 /*	display: inline-block;
 	vertical-align: top;
 	padding: 0 2%;*/
@@ -98,16 +99,15 @@
 	height: 10vh;
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, ul{
 	margin-top: 0;
-	a
 	text-transform: none;
 	vertical-align: text-top;
 }
 
-h2, h3, p{
+h2, h3, p, ul{
 	color: #cacaca;
-	font-family: sans-serif;
+	font-family: apercu, sans-serif;
 }
 
 h1{
@@ -123,14 +123,26 @@ h2{
 	margin: 0 5% 0 0;
 }
 
-p{
+p, ul{
 	font-size: 1.1em;
 	hyphens: auto;
+	-webkit-hyphenate-limit-before: 3; 
+-webkit-hyphenate-limit-after: 2;  
+/* current proposal */ 
+-moz-hyphenate-limit-chars: 6 3 2;     /* not yet supported */ 
+-webkit-hyphenate-limit-chars: 6 3 2;  /* not yet supported */ 
+-ms-hyphenate-limit-chars: 6 3 2; 
+hyphenate-limit-chars: 6 3 2;
 }
 
-hr{
-	color: #cacaca;
-	height: 1px;
+i{font-family: 'apercu-italic';}
+
+ul{
+	line-height: 100%;
+}
+
+body img{
+	width: 100%;
 }
 
 .footer{
@@ -163,6 +175,11 @@ hr{
 	.body{
 		width: 80vw;
 	}
+
+	.container-1{
+		width: 100%;
+		position: sticky;
+	}
 }
 
 /*iPad/large screen*/
@@ -178,7 +195,20 @@ hr{
 	}
 
 	.hidden{
-		display: block;
+		display: inline-block;
+	}
+
+	.show{
+		display: none;
+	}
+
+	.description{
+		font-size: 2.5em;
+		left: 0;
+		max-width: none;
+		max-height: none;
+		margin: 0 5%;
+		bottom: 7%;
 	}
 
 }
@@ -208,18 +238,10 @@ hr{
 		width: 40px;
 	}
 
-	p{
+	p, ul{
 		font-size: .95em;
 	}
-
-	.description{
-		font-size: 2.5em;
-		left: 0;
-		max-width: none;
-		max-height: none;
-		margin: 0 5%;
-		bottom: 7%;
-	}
+	
 
 	.container-2{
 		width: 100%;
@@ -257,22 +279,38 @@ hr{
 	.nav{
 		font-size: .85em;
 		right: unset;
-		text-align: left;
-		margin-left: 5%;
+		text-align: center;
+		margin: 5% 0 0 5%;
 	}
 
 	#logo{
-		position: static;
-		margin: 6%;
+		position: fixed;
+		margin: 2%;
+		width: 50px;
+		height: 32px;
 	}
 
 	#logo, .nav{
 		top: unset;
+		display: inline-block;
 	}
 
 	#header{
-		display: block;
+		margin: 5%;
 	}
+
+	.description{
+		font-size: 1.5em;
+	}
+
+	#rgbKineticSlider{
+		display: none;
+	}
+
+	.content{
+		background-image: url("img/grid.png");
+	}
+
 }
 
 /*mobile*/

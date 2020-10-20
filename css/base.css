@@ -6,12 +6,22 @@
 
 @font-face{
 	font-family: 'gt-sectra-black';
-    src: url('GT-Sectra-Black.otf') format('opentype');
+    src: url('../fonts/GT-Sectra-Black.otf') format('opentype');
 }
 
 @font-face{
 	font-family: 'gt-sectra-display';
-    src: url('GT-Sectra-Display-Bold.otf') format('opentype');
+    src: url('../fonts/GT-Sectra-Display-Bold.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'apercu';
+    src: url('../fonts/apercu_regular.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'apercu-italic';
+    src: url('../fonts/apercu_regular_italic.otf') format('opentype');
 }
 
 :root {
@@ -23,6 +33,11 @@ body {
 	background-color: #000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.demo-1{
+	background-image: url(../img/grid.png);
+	background-size: auto 100%;
 }
 
 #logo, .nav{
@@ -42,7 +57,7 @@ body {
 
 .nav{
 	color: white;
-	font-family: sans-serif;
+	font-family: apercu, sans-serif;
 	font-size: 1.5em;
 	/*font-weight: bold;*/
 	text-transform: uppercase;
@@ -62,14 +77,14 @@ body {
 .description{
 	bottom: 10%;
 	left: 6%;
-	font-size: 5em;
+	font-size: 2.5em;
 	font-family: gt-sectra-display, serif;
 	font-weight: bold;
 	color: white;
 	min-width: 44%;
 	max-width: 60%;
 	max-height: 60vh;
-	line-height: 110%;
+	line-height: 120%;
 
 	-webkit-touch-callout: none; 
     -webkit-user-select: none; 
