@@ -123,16 +123,10 @@ h2{
 	margin: 0 5% 0 0;
 }
 
-p, ul{
+p, ul, label, .button{
 	font-size: 1.1em;
 	hyphens: auto;
-	-webkit-hyphenate-limit-before: 3; 
--webkit-hyphenate-limit-after: 2;  
-/* current proposal */ 
--moz-hyphenate-limit-chars: 6 3 2;     /* not yet supported */ 
--webkit-hyphenate-limit-chars: 6 3 2;  /* not yet supported */ 
--ms-hyphenate-limit-chars: 6 3 2; 
-hyphenate-limit-chars: 6 3 2;
+	
 }
 
 i{font-family: 'apercu-italic';}
@@ -143,6 +137,39 @@ ul{
 
 body img{
 	width: 100%;
+}
+
+label, .button{
+	color: #cacaca;
+	font-family: apercu, sans-serif;
+	margin-right: 3%;
+	transition: 0.2s;
+}
+
+.button:hover{
+	background-color: #f00;
+	border: none;
+	color: black;
+}
+
+.mc-field-group{
+	padding-top: 5%;
+}
+
+input{
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+}
+
+.button{
+	background-color: black;
+	border: #cacaca solid 1px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #cacaca;
+	padding: 1% 2%;
+	margin-top: 5%;
 }
 
 .footer{
