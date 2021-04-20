@@ -1,3 +1,5 @@
+// DO NOT CHANGE ANY OF THIS
+
 (function() {
 
     window.rgbKineticSlider = function(options) {

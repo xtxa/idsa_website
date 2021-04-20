@@ -1,14 +1,3 @@
-// var show2020 = function(event){
-// 	var text = document.getElementById("about-text");
-// 	if (text.classList.contains("hide") == true){
-// 		text.style.height = "auto";
-// 		text.classList.remove("hide");
-// 	} else{
-// 		text.style.height = 0;
-// 		text.classList.add("hide");
-// 	};
-// }; 
-
 
 // CHANGE FOOTER YEAR HERE
 document.getElementById('year').innerHTML = "RISD IDSA 2021";
@@ -33,7 +22,3 @@ function showSlides(n) {
   thisSlide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
 
 }
-
-//   setInterval(() => {
-//   plusSlides(1);
-// }, 7000);

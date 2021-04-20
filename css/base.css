@@ -1,9 +1,12 @@
+/*CSS FOR INDEX PAGE ONLY*/
+
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
 }
 
+/*FONTS*/
 @font-face{
 	font-family: 'gt-sectra-black';
     src: url('../fonts/GT-Sectra-Black.otf') format('opentype');
@@ -35,11 +38,13 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/*FOR THE RGBKINETICSLIDER*/
 .demo-1{
 	background-image: url(../img/grid.png);
 	background-size: auto 100%;
 }
 
+/*HEADER*/
 #logo, .nav{
 	top: 5%;
 }

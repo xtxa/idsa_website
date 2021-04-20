@@ -1,3 +1,5 @@
+/*CSS FOR REST OF THE PAGES*/
+
 .header{
 	font-family: apercu, sans-serif;
 	font-size: 1.2em;
@@ -56,11 +58,13 @@
 	padding: 0 2%;
 }
 
+/*CONTAINER 1 TAKES UP 1/3 WIDTH*/
 .container-1{
 	width: 33%;
 	position: sticky;
 }
 
+/*CONTAINER 3 TAKES UP 2/3 WIDTH*/
 .container-3{
 	width: 66%;
 	/*max-height: 80vh;*/
@@ -76,6 +80,7 @@
   scrollbar-width: none;
 }
 
+/*CONTAINER 2 TAKES UP 1/2 WIDTH*/
 .container-2{
 	width: 49%;
 	margin-bottom: 3%;
@@ -89,6 +94,7 @@
 	margin-bottom: 10vh;
 }
 
+/*CENTERED CONTENT*/
 .center{
 	text-align: center;
 	padding: 0 2%;
@@ -96,6 +102,7 @@
 	margin: 0;
 }
 
+/*EMPTY DIV FOR BREAKS*/
 .break{
 	height: 10vh;
 }
@@ -145,6 +152,7 @@ i{font-family: 'apercu-italic';}
 	color: red;
 }
 
+/*LISTS*/
 li{
 	line-height: 125%;
 }
@@ -174,6 +182,7 @@ label, .button{
 	color: black;
 }
 
+/*GRID FOR COMPANY LOGO ICONS*/
 .grid {
   display: grid;
 }
@@ -182,6 +191,7 @@ label, .button{
 	padding: 7%;
 }
 
+/*FOR EMAIL SIGNUP*/
 .mc-field-group{
 	padding-top: 5%;
 }
@@ -226,7 +236,7 @@ input{
 	display: none;
 }
 
-/*CAROUSEL STUFF*/
+/*CAROUSEL*/
 .carousel {
   width: 100%;
   max-height: 100vh;
